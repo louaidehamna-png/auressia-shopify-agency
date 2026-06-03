@@ -1,5 +1,6 @@
 export type Service = {
   handle: string;
+  shopifyHandle: string;
   name: string;
   tagline: string;
   description: string;
@@ -15,6 +16,7 @@ export type Service = {
 export const services: Service[] = [
   {
     handle: "chatbot-voiceflow-starter",
+    shopifyHandle: "chatbot-starter",
     name: "Chatbot Starter",
     tagline: "Vos questions fréquentes, gérées automatiquement.",
     description:
@@ -41,6 +43,7 @@ export const services: Service[] = [
   },
   {
     handle: "chatbot-whatsapp-pro",
+    shopifyHandle: "chatbot-whatsapp-pro",
     name: "Chatbot WhatsApp Pro",
     tagline: "Votre WhatsApp travaille même quand vous ne l'êtes pas.",
     description:
@@ -68,6 +71,7 @@ export const services: Service[] = [
   },
   {
     handle: "automatisation-make",
+    shopifyHandle: "automatisation-make",
     name: "Automatisation Make",
     tagline: "Ces 5 tâches répétitives ? Elles tourneront seules.",
     description:
@@ -93,6 +97,7 @@ export const services: Service[] = [
   },
   {
     handle: "site-one-pager-framer",
+    shopifyHandle: "site-one-pager-framer",
     name: "Site One-Pager Framer",
     tagline: "Un site qui donne envie de vous contacter.",
     description:
@@ -119,6 +124,7 @@ export const services: Service[] = [
   },
   {
     handle: "pack-activite-complete",
+    shopifyHandle: "pack-activite-complete",
     name: "Pack Activité Complète",
     tagline: "Le duo qui change vraiment les choses.",
     description:
@@ -146,6 +152,7 @@ export const services: Service[] = [
   },
   {
     handle: "audit-ia",
+    shopifyHandle: "audit-ia-automatisation",
     name: "Audit IA & Automatisation",
     tagline: "30 minutes pour savoir exactement quoi faire.",
     description:

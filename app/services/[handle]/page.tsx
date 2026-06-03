@@ -6,6 +6,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { CheckoutButton } from "@/components/CheckoutButton";
 import { services, getServiceByHandle } from "@/lib/services";
 import {
   ArrowRight,
@@ -130,18 +131,10 @@ export default async function ServiceDetailPage({ params }: Props) {
                   Livraison : {service.delivery}
                 </div>
 
-                <Link
-                  href="/contact"
-                  className={cn(
-                    buttonVariants({ size: "lg" }),
-                    "w-full rounded-xl justify-center mb-3"
-                  )}
-                >
-                  {service.price === 0
-                    ? "Réserver l'audit"
-                    : "Commander ce service"}
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
+                <CheckoutButton
+                  shopifyHandle={service.shopifyHandle}
+                  label={service.price === 0 ? "Réserver l'audit" : "Commander ce service"}
+                />
 
                 <Link
                   href="/contact"
