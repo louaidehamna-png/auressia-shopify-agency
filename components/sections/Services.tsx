@@ -3,73 +3,7 @@ import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Clock, CheckCircle2 } from "lucide-react";
-
-const services = [
-  {
-    name: "Chatbot Voiceflow Starter",
-    description:
-      "Un chatbot intelligent intégré à votre site ou WhatsApp. Répond aux questions courantes 24h/24.",
-    price: 290,
-    originalPrice: 590,
-    delivery: "5 jours",
-    highlights: ["Intégration site ou WhatsApp", "Entraîné sur vos FAQ", "1 révision incluse"],
-    tag: "Populaire",
-    handle: "chatbot-voiceflow-starter",
-  },
-  {
-    name: "Chatbot WhatsApp Business Pro",
-    description:
-      "Automatisez vos conversations WhatsApp Business. Réservations, devis, support — sans intervention humaine.",
-    price: 490,
-    originalPrice: 990,
-    delivery: "7 jours",
-    highlights: ["WhatsApp Business API", "Flux de réservation", "Intégration agenda", "2 révisions"],
-    tag: "Best seller",
-    handle: "chatbot-whatsapp-pro",
-  },
-  {
-    name: "Automatisation Make (5 scénarios)",
-    description:
-      "5 automatisations sur mesure avec Make. Connectez vos outils, éliminez les tâches répétitives.",
-    price: 190,
-    originalPrice: 390,
-    delivery: "5 jours",
-    highlights: ["5 scénarios Make", "Connexion CRM, email, sheets", "Documentation incluse"],
-    handle: "automatisation-make",
-  },
-  {
-    name: "Site Web One-Pager Framer",
-    description:
-      "Un site one-page moderne, rapide, et optimisé SEO. Parfait pour lancer une offre ou une activité.",
-    price: 390,
-    originalPrice: 790,
-    delivery: "7 jours",
-    highlights: ["Design sur mesure", "SEO on-page", "Mobile-first", "Hébergement Framer inclus 1 an"],
-    handle: "site-one-pager-framer",
-  },
-  {
-    name: "Pack Restaurant Complet",
-    description:
-      "Chatbot + système de réservation automatisé. Idéal pour les restaurants, bars et hôtels de la Côte d'Azur.",
-    price: 690,
-    originalPrice: 1490,
-    delivery: "10 jours",
-    highlights: ["Chatbot WhatsApp", "Réservations automatiques", "Rappels SMS", "Tableau de bord"],
-    tag: "Économisez 800€",
-    handle: "pack-restaurant",
-  },
-  {
-    name: "Audit IA & Automatisation",
-    description:
-      "30 minutes pour analyser votre activité et identifier les 3 automatisations à plus fort impact.",
-    price: 0,
-    originalPrice: 90,
-    delivery: "Sous 48h",
-    highlights: ["Appel visio 30 min", "Rapport personnalisé", "Feuille de route IA"],
-    tag: "Gratuit",
-    handle: "audit-ia",
-  },
-];
+import { services } from "@/lib/services";
 
 export function Services() {
   return (
@@ -85,8 +19,8 @@ export function Services() {
             <span className="text-terracotta">pas des promesses.</span>
           </h2>
           <p className="mt-4 max-w-xl mx-auto text-muted-foreground">
-            Prix cassés pendant le lancement. Chaque service est livré avec un
-            suivi de 30 jours inclus.
+            Tarifs de lancement. Chaque service est livré avec 30 jours de
+            support inclus — pas d&apos;abandon post-livraison.
           </p>
         </div>
 
@@ -98,20 +32,24 @@ export function Services() {
             >
               {service.tag && (
                 <Badge
-                  className={`absolute -top-2.5 left-4 text-xs ${
+                  className={cn(
+                    "absolute -top-2.5 left-4 text-xs",
                     service.price === 0
                       ? "bg-terracotta text-white border-0"
                       : "bg-azure-soft text-azure border-azure/20"
-                  }`}
+                  )}
                 >
                   {service.tag}
                 </Badge>
               )}
 
               <div className="flex-1">
-                <h3 className="font-heading text-lg font-semibold mb-2">
+                <h3 className="font-heading text-lg font-semibold mb-1">
                   {service.name}
                 </h3>
+                <p className="text-xs font-medium text-primary mb-3">
+                  {service.tagline}
+                </p>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                   {service.description}
                 </p>
@@ -132,12 +70,14 @@ export function Services() {
                       {service.price === 0 ? (
                         <span className="text-terracotta">Gratuit</span>
                       ) : (
-                        <>{service.price}€</>
+                        <>{service.price}&thinsp;€</>
                       )}
                     </div>
-                    <div className="text-xs text-muted-foreground line-through">
-                      {service.originalPrice}€
-                    </div>
+                    {service.price > 0 && (
+                      <div className="text-xs text-muted-foreground line-through">
+                        {service.originalPrice}&thinsp;€
+                      </div>
+                    )}
                   </div>
                   <div className="flex items-center gap-1 text-xs text-muted-foreground">
                     <Clock className="h-3 w-3" />
@@ -153,7 +93,7 @@ export function Services() {
                     "w-full rounded-xl justify-center"
                   )}
                 >
-                  {service.price === 0 ? "Réserver l'audit" : "Commander"}
+                  {service.price === 0 ? "Réserver l'audit" : "En savoir plus"}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>
