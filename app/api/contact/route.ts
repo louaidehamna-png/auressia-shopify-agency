@@ -1,5 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
+import { Resend } from "resend";
 import { z } from "zod";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 const schema = z.object({
   name: z.string().min(2),
@@ -13,8 +16,20 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const data = schema.parse(body);
 
-    // TODO: connecter Resend pour l'envoi d'email
-    console.log("New contact form submission:", data);
+    await resend.emails.send({
+      from: "Auressia <onboarding@resend.dev>",
+      to: process.env.CONTACT_EMAIL!,
+      subject: `Nouveau contact — ${data.name} (${data.activity})`,
+      html: `
+        <h2>Nouveau message depuis auressia.fr</h2>
+        <p><strong>Nom :</strong> ${data.name}</p>
+        <p><strong>Email :</strong> ${data.email}</p>
+        <p><strong>Activité :</strong> ${data.activity}</p>
+        <p><strong>Message :</strong></p>
+        <p>${data.message}</p>
+      `,
+      replyTo: data.email,
+    });
 
     return NextResponse.json({ success: true });
   } catch {
