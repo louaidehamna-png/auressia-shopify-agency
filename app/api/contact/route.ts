@@ -2,7 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import { z } from "zod";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Lazy init to avoid build-time error when env var is not set
+const getResend = () => new Resend(process.env.RESEND_API_KEY!);
 
 const schema = z.object({
   name: z.string().min(2),
@@ -16,7 +17,7 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const data = schema.parse(body);
 
-    await resend.emails.send({
+    await getResend().emails.send({
       from: "Auressia <onboarding@resend.dev>",
       to: process.env.CONTACT_EMAIL!,
       subject: `Nouveau contact — ${data.name} (${data.activity})`,
