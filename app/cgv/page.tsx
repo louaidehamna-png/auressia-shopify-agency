@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Conditions générales de vente",
-  alternates: { canonical: "/cgv" },
+  alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://auressia-shopify-agency.vercel.app"}/cgv` },
 };
 
 export default function CGVPage() {

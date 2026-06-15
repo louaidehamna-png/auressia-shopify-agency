@@ -1,0 +1,38 @@
+# Auressia
+
+> Services digitaux IA pour les PME de la Côte d'Azur. Chatbots IA, automatisations no-code, et sites web livrés en 7 jours à des prix accessibles.
+
+Auressia est une agence de services digitaux basée à Nice (France), spécialisée dans les outils IA et l'automatisation no-code pour les petites et moyennes entreprises. Fondée par Louai Dehamna, elle intervient sur Nice, Sophia Antipolis, Monaco et l'ensemble de la Côte d'Azur.
+
+## Services
+
+- [Chatbot Starter](https://auressia-shopify-agency.vercel.app/#services): Chatbot IA pour site web, formé sur les FAQ de l'entreprise. Prix de lancement : 290€. Livraison : 5 jours.
+- [Chatbot WhatsApp Pro](https://auressia-shopify-agency.vercel.app/#services): Chatbot intégré à WhatsApp Business via API officielle, prise de RDV et qualification de leads. Prix de lancement : 490€. Livraison : 7 jours.
+- [Automatisation Make](https://auressia-shopify-agency.vercel.app/#services): 5 scénarios Make.com personnalisés pour automatiser facturation, CRM, emails ou réservations. Prix de lancement : 190€. Livraison : 5 jours.
+- [Site One-Pager Framer](https://auressia-shopify-agency.vercel.app/#services): Site vitrine one-page sur Framer, mobile-first, SEO optimisé, hébergement inclus 1 an. Prix de lancement : 390€. Livraison : 7 jours.
+- [Pack Activité Complète](https://auressia-shopify-agency.vercel.app/#services): Chatbot WhatsApp + automatisation + site one-pager. Solution complète pour démarrer la transformation digitale. Prix de lancement : 690€. Livraison : 10 jours.
+- [Audit IA & Automatisation](https://auressia-shopify-agency.vercel.app/#services): Appel de 30 minutes + rapport personnalisé + roadmap IA. Entièrement gratuit, disponible sous 48h.
+
+## Processus
+
+1. Audit gratuit (30 min, sous 48h)
+2. Devis et validation du périmètre
+3. Livraison en 5 à 10 jours selon le service
+4. 30 jours de support inclus
+
+## Blog
+
+- [Blog IA & Automatisation](https://auressia-shopify-agency.vercel.app/blog): Articles pratiques sur les chatbots, l'automatisation no-code, et la transformation digitale des PME.
+
+## Informations de contact
+
+- Email : louaidehamna@gmail.com
+- LinkedIn : https://www.linkedin.com/in/auressia-intelligence-0b73932a0/
+- Zone géographique : Nice, Sophia Antipolis, Monaco, Côte d'Azur, France
+- Outils utilisés : Voiceflow, Botpress, Make.com, Zapier, Framer, Webflow
+- Statut : Micro-entrepreneur, TVA non applicable (art. 293 B du CGI)
+
+## Pages légales
+
+- [Conditions Générales de Vente](https://auressia-shopify-agency.vercel.app/cgv)
+- [Mentions Légales](https://auressia-shopify-agency.vercel.app/mentions-legales)

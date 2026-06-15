@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Mentions légales",
-  alternates: { canonical: "/mentions-legales" },
+  alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://auressia-shopify-agency.vercel.app"}/mentions-legales` },
 };
 
 export default function MentionsLegalesPage() {

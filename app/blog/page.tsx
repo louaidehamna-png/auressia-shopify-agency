@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Blog — Automatisation et IA pour les PME",
   description:
     "Conseils pratiques sur l'automatisation no-code, les chatbots IA et la transformation digitale des PME.",
-  alternates: { canonical: "/blog" },
+  alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://auressia-shopify-agency.vercel.app"}/blog` },
 };
 
 const articles = [
