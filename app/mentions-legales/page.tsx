@@ -19,7 +19,8 @@ export default function MentionsLegalesPage() {
           <p>
             Auressia — Louai Dehamna<br />
             Micro-entrepreneur — SIRET : 925 103 046 00015<br />
-            Nice, France<br />
+            2 Rue Mantega, 06100 Nice, France<br />
+            Téléphone : 07 60 00 96 46<br />
             Email : louaidehamna@gmail.com
           </p>
 

@@ -27,6 +27,8 @@ Auressia est une agence de services digitaux basée à Nice (France), spécialis
 ## Informations de contact
 
 - Email : louaidehamna@gmail.com
+- Téléphone : 07 60 00 96 46
+- Adresse : 2 Rue Mantega, 06100 Nice, France
 - LinkedIn : https://www.linkedin.com/in/auressia-intelligence-0b73932a0/
 - Zone géographique : Nice, Sophia Antipolis, Monaco, Côte d'Azur, France
 - Outils utilisés : Voiceflow, Botpress, Make.com, Zapier, Framer, Webflow

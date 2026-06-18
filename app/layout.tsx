@@ -73,10 +73,13 @@ const organizationSchema = {
     "Services digitaux IA pour les PME de la Côte d'Azur. Chatbots, automatisations Make, sites Framer — livrés en 7 jours.",
   url: BASE_URL,
   email: "louaidehamna@gmail.com",
+  telephone: "+33760009646",
   priceRange: "€190 – €690",
   currenciesAccepted: "EUR",
   address: {
     "@type": "PostalAddress",
+    streetAddress: "2 Rue Mantega",
+    postalCode: "06100",
     addressLocality: "Nice",
     addressRegion: "Alpes-Maritimes",
     addressCountry: "FR",
