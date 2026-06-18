@@ -18,6 +18,7 @@ export default function MentionsLegalesPage() {
           <h2>Éditeur du site</h2>
           <p>
             Auressia — Louai Dehamna<br />
+            Micro-entrepreneur — SIRET : 925 103 046 00015<br />
             Nice, France<br />
             Email : louaidehamna@gmail.com
           </p>
