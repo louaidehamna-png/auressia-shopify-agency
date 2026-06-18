@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Clock } from "lucide-react";
+import { articles } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: "Blog — Automatisation et IA pour les PME",
@@ -9,36 +11,6 @@ export const metadata: Metadata = {
     "Conseils pratiques sur l'automatisation no-code, les chatbots IA et la transformation digitale des PME.",
   alternates: { canonical: `${process.env.NEXT_PUBLIC_APP_URL ?? "https://auressia-shopify-agency.vercel.app"}/blog` },
 };
-
-const articles = [
-  {
-    slug: "chatbot-whatsapp-pme",
-    title: "Pourquoi un chatbot WhatsApp change vraiment les choses pour une PME",
-    excerpt:
-      "WhatsApp est le canal de communication numéro 1 en France. Voici comment l'automatiser sans perdre l'aspect humain.",
-    date: "Bientôt disponible",
-    readTime: "5 min",
-    category: "Chatbots IA",
-  },
-  {
-    slug: "automatisation-make-cas-concrets",
-    title: "5 automatisations Make qui font gagner 5h par semaine",
-    excerpt:
-      "Des cas concrets d'automatisations no-code pour les petites entreprises : facturation, CRM, emails, réservations.",
-    date: "Bientôt disponible",
-    readTime: "7 min",
-    category: "Automatisation",
-  },
-  {
-    slug: "ia-pme-par-ou-commencer",
-    title: "IA pour les PME : par où commencer sans se perdre",
-    excerpt:
-      "Un guide honnête pour les dirigeants de PME qui veulent utiliser l'IA sans jargon et sans budget démesuré.",
-    date: "Bientôt disponible",
-    readTime: "6 min",
-    category: "IA & Stratégie",
-  },
-];
 
 export default function BlogPage() {
   return (
@@ -59,27 +31,46 @@ export default function BlogPage() {
           </div>
 
           <div className="space-y-4">
-            {articles.map((article) => (
-              <div
-                key={article.slug}
-                className="rounded-2xl border border-border bg-card p-6 opacity-70"
-              >
-                <div className="flex items-center gap-3 mb-3">
-                  <span className="text-xs font-medium text-primary bg-azure-soft px-2.5 py-1 rounded-full">
-                    {article.category}
-                  </span>
-                  <span className="text-xs text-muted-foreground flex items-center gap-1">
-                    <Clock className="h-3 w-3" />
-                    {article.readTime}
+            {articles.map((article) => {
+              const card = (
+                <div
+                  className={`rounded-2xl border border-border bg-card p-6 ${
+                    article.published ? "hover:border-azure transition-colors" : "opacity-70"
+                  }`}
+                >
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="text-xs font-medium text-primary bg-azure-soft px-2.5 py-1 rounded-full">
+                      {article.category}
+                    </span>
+                    <span className="text-xs text-muted-foreground flex items-center gap-1">
+                      <Clock className="h-3 w-3" />
+                      {article.readTime}
+                    </span>
+                  </div>
+                  <h2 className="font-heading text-lg font-semibold mb-2">{article.title}</h2>
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                    {article.excerpt}
+                  </p>
+                  <span className="text-xs text-muted-foreground">
+                    {article.published
+                      ? new Date(article.publishedAt!).toLocaleDateString("fr-FR", {
+                          day: "numeric",
+                          month: "long",
+                          year: "numeric",
+                        })
+                      : "Bientôt disponible"}
                   </span>
                 </div>
-                <h2 className="font-heading text-lg font-semibold mb-2">{article.title}</h2>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                  {article.excerpt}
-                </p>
-                <span className="text-xs text-muted-foreground">{article.date}</span>
-              </div>
-            ))}
+              );
+
+              return article.published ? (
+                <Link key={article.slug} href={`/blog/${article.slug}`}>
+                  {card}
+                </Link>
+              ) : (
+                <div key={article.slug}>{card}</div>
+              );
+            })}
           </div>
         </div>
       </main>
