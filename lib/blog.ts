@@ -20,7 +20,7 @@ export const articles: BlogArticle[] = [
     publishedAt: "2026-06-18",
     published: true,
     content: [
-      "WhatsApp est devenu le canal de contact préféré des clients en France, devant l'email et le téléphone, pour tout ce qui touche à la prise de rendez-vous, aux questions rapides ou au suivi d'une commande. Le problème pour la plupart des petites entreprises, c'est que ce canal reste géré à la main, depuis un téléphone, souvent en dehors des horaires de travail.",
+      "WhatsApp est un canal très utilisé par les clients en France pour tout ce qui touche à la prise de rendez-vous, aux questions rapides ou au suivi d'une commande. Le problème, c'est que ce canal reste souvent géré à la main, depuis un téléphone, en dehors des horaires de travail.",
       "## Le coût réel de répondre à la main",
       "Une PME qui gère WhatsApp Business manuellement perd des opportunités de trois façons : les messages reçus le soir ou le week-end restent sans réponse jusqu'au lendemain, les questions répétitives (horaires, tarifs, disponibilités) prennent du temps à chaque fois, et certains prospects qui n'obtiennent pas de réponse rapide se tournent simplement vers un concurrent qui répond plus vite.",
       "Un chatbot ne remplace pas la relation humaine, il filtre et accélère la partie répétitive pour que le temps humain se concentre sur les échanges qui ont vraiment besoin d'un humain.",
@@ -61,7 +61,7 @@ export const articles: BlogArticle[] = [
       "## Ce que ça coûte vraiment",
       "Make propose un plan gratuit limité en nombre d'opérations, suffisant pour tester une automatisation simple. Au-delà, les plans payants démarrent autour de 9€/mois. Le vrai coût n'est pas l'abonnement, c'est le temps de configuration : construire un scénario fiable (avec gestion des erreurs, des cas particuliers) prend généralement plusieurs heures par automatisation pour quelqu'un qui découvre l'outil.",
       "## Combien de temps pour mettre en place les 5",
-      "Pour une PME avec des outils déjà en place (CRM, calendrier, Stripe), la mise en place de ces 5 automatisations prend généralement 5 jours : audit des outils existants, construction des scénarios, tests, puis ajustements. Le gain de temps hebdomadaire dépend du volume d'activité, mais les automatisations de relance et de facturation sont souvent celles qui se rentabilisent le plus vite.",
+      "Pour une PME avec des outils déjà en place (CRM, calendrier, Stripe), la mise en place de ces 5 automatisations prend généralement 5 jours : audit des outils existants, construction des scénarios, tests, puis ajustements. Le gain de temps hebdomadaire dépend ensuite du volume d'activité de l'entreprise.",
       "Si vous voulez savoir lesquelles de ces automatisations ont du sens pour votre activité précise, un audit gratuit de 30 minutes suffit à le cerner — chaque métier a ses propres tâches répétitives.",
     ],
   },
