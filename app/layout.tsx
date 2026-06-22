@@ -99,6 +99,7 @@ const organizationSchema = {
     email: "louaidehamna@gmail.com",
     sameAs: ["https://www.linkedin.com/in/auressia-intelligence-0b73932a0/"],
   },
+  sameAs: ["https://www.linkedin.com/company/130164192/"],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Services digitaux IA",
