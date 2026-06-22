@@ -6,12 +6,12 @@ Auressia est une agence de services digitaux basée à Nice (France), spécialis
 
 ## Services
 
-- [Chatbot Starter](https://auressia-shopify-agency.vercel.app/#services): Chatbot IA pour site web, formé sur les FAQ de l'entreprise. Prix de lancement : 290€. Livraison : 5 jours.
-- [Chatbot WhatsApp Pro](https://auressia-shopify-agency.vercel.app/#services): Chatbot intégré à WhatsApp Business via API officielle, prise de RDV et qualification de leads. Prix de lancement : 490€. Livraison : 7 jours.
-- [Automatisation Make](https://auressia-shopify-agency.vercel.app/#services): 5 scénarios Make.com personnalisés pour automatiser facturation, CRM, emails ou réservations. Prix de lancement : 190€. Livraison : 5 jours.
-- [Site One-Pager Framer](https://auressia-shopify-agency.vercel.app/#services): Site vitrine one-page sur Framer, mobile-first, SEO optimisé, hébergement inclus 1 an. Prix de lancement : 390€. Livraison : 7 jours.
-- [Pack Activité Complète](https://auressia-shopify-agency.vercel.app/#services): Chatbot WhatsApp + automatisation + site one-pager. Solution complète pour démarrer la transformation digitale. Prix de lancement : 690€. Livraison : 10 jours.
-- [Audit IA & Automatisation](https://auressia-shopify-agency.vercel.app/#services): Appel de 30 minutes + rapport personnalisé + roadmap IA. Entièrement gratuit, disponible sous 48h.
+- [Chatbot Starter](https://www.auressia.fr/services/chatbot-voiceflow-starter): Chatbot IA pour site web, formé sur les FAQ de l'entreprise. Prix de lancement : 290€. Livraison : 5 jours.
+- [Chatbot WhatsApp Pro](https://www.auressia.fr/services/chatbot-whatsapp-pro): Chatbot intégré à WhatsApp Business via API officielle, prise de RDV et qualification de leads. Prix de lancement : 490€. Livraison : 7 jours.
+- [Automatisation Make](https://www.auressia.fr/services/automatisation-make): 5 scénarios Make.com personnalisés pour automatiser facturation, CRM, emails ou réservations. Prix de lancement : 190€. Livraison : 5 jours.
+- [Site One-Pager Framer](https://www.auressia.fr/services): Site vitrine one-page sur Framer, mobile-first, SEO optimisé, hébergement inclus 1 an. Prix de lancement : 390€. Livraison : 7 jours.
+- [Pack Activité Complète](https://www.auressia.fr/services): Chatbot WhatsApp + automatisation + site one-pager. Solution complète pour démarrer la transformation digitale. Prix de lancement : 690€. Livraison : 10 jours.
+- [Audit IA & Automatisation](https://www.auressia.fr/services): Appel de 30 minutes + rapport personnalisé + roadmap IA. Entièrement gratuit, disponible sous 48h.
 
 ## Processus
 
@@ -22,19 +22,23 @@ Auressia est une agence de services digitaux basée à Nice (France), spécialis
 
 ## Blog
 
-- [Blog IA & Automatisation](https://auressia-shopify-agency.vercel.app/blog): Articles pratiques sur les chatbots, l'automatisation no-code, et la transformation digitale des PME.
+- [Blog IA & Automatisation](https://www.auressia.fr/blog): Articles pratiques sur les chatbots, l'automatisation no-code, et la transformation digitale des PME.
+- [Pourquoi un chatbot WhatsApp change vraiment les choses pour une PME](https://www.auressia.fr/blog/chatbot-whatsapp-pme)
+- [5 automatisations Make qui peuvent faire gagner 5h par semaine](https://www.auressia.fr/blog/automatisation-make-cas-concrets)
+- [IA pour les PME : par où commencer sans se perdre](https://www.auressia.fr/blog/ia-pme-par-ou-commencer)
 
 ## Informations de contact
 
 - Email : louaidehamna@gmail.com
 - Téléphone : 07 60 00 96 46
 - Adresse : 2 Rue Mantega, 06100 Nice, France
-- LinkedIn : https://www.linkedin.com/in/auressia-intelligence-0b73932a0/
+- LinkedIn (fondateur) : https://www.linkedin.com/in/auressia-intelligence-0b73932a0/
+- LinkedIn (entreprise) : https://www.linkedin.com/company/130164192/
 - Zone géographique : Nice, Sophia Antipolis, Monaco, Côte d'Azur, France
 - Outils utilisés : Voiceflow, Botpress, Make.com, Zapier, Framer, Webflow
 - Statut : Micro-entrepreneur, TVA non applicable (art. 293 B du CGI)
 
 ## Pages légales
 
-- [Conditions Générales de Vente](https://auressia-shopify-agency.vercel.app/cgv)
-- [Mentions Légales](https://auressia-shopify-agency.vercel.app/mentions-legales)
+- [Conditions Générales de Vente](https://www.auressia.fr/cgv)
+- [Mentions Légales](https://www.auressia.fr/mentions-legales)
