@@ -71,6 +71,25 @@ export default function AboutPage() {
                 prix que les PME peuvent vraiment se permettre.
               </p>
             </div>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a
+                href="https://www.linkedin.com/in/auressia-intelligence-0b73932a0/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm underline text-muted-foreground hover:text-foreground"
+              >
+                Profil LinkedIn de Louai
+              </a>
+              <span className="text-muted-foreground">·</span>
+              <a
+                href="https://www.linkedin.com/company/130164192/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm underline text-muted-foreground hover:text-foreground"
+              >
+                Page entreprise Auressia
+              </a>
+            </div>
           </div>
 
           {/* Values */}
