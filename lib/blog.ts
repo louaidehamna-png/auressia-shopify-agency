@@ -38,7 +38,7 @@ export const articles: BlogArticle[] = [
   },
   {
     slug: "automatisation-make-cas-concrets",
-    title: "5 automatisations Make qui font gagner 5h par semaine",
+    title: "5 automatisations Make qui peuvent faire gagner 5h par semaine",
     excerpt:
       "Des cas concrets d'automatisations no-code pour les petites entreprises : facturation, CRM, emails, réservations.",
     category: "Automatisation",
