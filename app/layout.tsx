@@ -97,8 +97,8 @@ const organizationSchema = {
     name: "Louai Dehamna",
     jobTitle: "Fondateur & Consultant IA",
     email: "louaidehamna@gmail.com",
+    sameAs: ["https://www.linkedin.com/in/auressia-intelligence-0b73932a0/"],
   },
-  sameAs: ["https://www.linkedin.com/in/auressia-intelligence-0b73932a0/"],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Services digitaux IA",
