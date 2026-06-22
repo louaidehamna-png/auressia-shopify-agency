@@ -8,12 +8,15 @@ import { articles, getArticle } from "@/lib/blog";
 
 const BASE_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://auressia-shopify-agency.vercel.app";
 
+type Props = { params: Promise<{ slug: string }> };
+
 export function generateStaticParams() {
   return articles.filter((a) => a.published).map((a) => ({ slug: a.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const article = getArticle(params.slug);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const article = getArticle(slug);
   if (!article) return {};
 
   return {
@@ -29,8 +32,9 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-export default function BlogArticlePage({ params }: { params: { slug: string } }) {
-  const article = getArticle(params.slug);
+export default async function BlogArticlePage({ params }: Props) {
+  const { slug } = await params;
+  const article = getArticle(slug);
   if (!article) notFound();
 
   const articleSchema = {
