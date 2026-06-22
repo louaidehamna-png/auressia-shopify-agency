@@ -64,6 +64,21 @@ export default async function BlogArticlePage({ params }: Props) {
     mainEntityOfPage: `${BASE_URL}/blog/${article.slug}`,
   };
 
+  const faqSchema = article.faq
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: article.faq.map((item) => ({
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.answer,
+          },
+        })),
+      }
+    : null;
+
   return (
     <>
       <Navbar />
@@ -71,6 +86,12 @@ export default async function BlogArticlePage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <main className="pt-28 pb-24 px-4">
         <div className="mx-auto max-w-3xl">
           <Link
@@ -126,6 +147,26 @@ export default async function BlogArticlePage({ params }: Props) {
               )
             )}
           </div>
+
+          {article.faq && article.faq.length > 0 && (
+            <div className="mt-16">
+              <h2 className="font-heading text-2xl font-semibold mb-6">
+                Questions fréquentes
+              </h2>
+              <div className="space-y-6">
+                {article.faq.map((item) => (
+                  <div key={item.question}>
+                    <h3 className="font-heading text-base font-semibold mb-1.5">
+                      {item.question}
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {item.answer}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
 
           <div className="mt-16 rounded-2xl border border-border bg-card p-6">
             <p className="font-heading text-lg font-semibold mb-2">

@@ -1,3 +1,5 @@
+export type FaqItem = { question: string; answer: string };
+
 export type BlogArticle = {
   slug: string;
   title: string;
@@ -7,6 +9,7 @@ export type BlogArticle = {
   publishedAt: string | null;
   published: boolean;
   content: string[];
+  faq?: FaqItem[];
 };
 
 export const articles: BlogArticle[] = [
@@ -34,6 +37,23 @@ export const articles: BlogArticle[] = [
       "## Combien de temps ça prend à mettre en place",
       "La mise en place d'un chatbot WhatsApp Business via l'API officielle prend généralement entre 5 et 7 jours : validation du numéro auprès de Meta, configuration des parcours de conversation (FAQ, prise de RDV, qualification), puis tests avant la mise en production. C'est un délai court comparé au temps perdu chaque semaine à répondre manuellement aux mêmes questions.",
       "Si vous voulez évaluer si ça a du sens pour votre activité, le plus simple est de partir d'un audit gratuit de 30 minutes plutôt que de deviner — chaque métier a ses propres questions répétitives et ses propres points de friction.",
+    ],
+    faq: [
+      {
+        question: "Combien de temps faut-il pour mettre en place un chatbot WhatsApp ?",
+        answer:
+          "Généralement entre 5 et 7 jours via l'API officielle WhatsApp Business : validation du numéro auprès de Meta, configuration des parcours de conversation, puis tests avant la mise en production.",
+      },
+      {
+        question: "Quelle est la différence entre l'API officielle WhatsApp et les solutions non officielles ?",
+        answer:
+          "L'API officielle de Meta nécessite une validation du numéro mais garantit la stabilité du service. Les solutions non officielles, connectées au compte WhatsApp personnel, exposent à un risque de bannissement du numéro par Meta.",
+      },
+      {
+        question: "Un chatbot WhatsApp peut-il remplacer le service client humain ?",
+        answer:
+          "Non. Un chatbot filtre et accélère les échanges répétitifs, mais doit transférer à un humain dès qu'une demande sort du cadre prévu (réclamation, question complexe, client mécontent).",
+      },
     ],
   },
   {
@@ -64,6 +84,23 @@ export const articles: BlogArticle[] = [
       "Pour une PME avec des outils déjà en place (CRM, calendrier, Stripe), la mise en place de ces 5 automatisations prend généralement 5 jours : audit des outils existants, construction des scénarios, tests, puis ajustements. Le gain de temps hebdomadaire dépend ensuite du volume d'activité de l'entreprise.",
       "Si vous voulez savoir lesquelles de ces automatisations ont du sens pour votre activité précise, un audit gratuit de 30 minutes suffit à le cerner — chaque métier a ses propres tâches répétitives.",
     ],
+    faq: [
+      {
+        question: "Combien coûte Make.com ?",
+        answer:
+          "Make propose un plan gratuit limité en nombre d'opérations. Les plans payants démarrent autour de 9€/mois. Le vrai coût n'est pas l'abonnement mais le temps de configuration des scénarios.",
+      },
+      {
+        question: "Faut-il savoir coder pour utiliser Make ?",
+        answer:
+          "Non, Make est un outil no-code : les automatisations se construisent en connectant visuellement des applications (Gmail, Stripe, Notion, etc.) sans écrire de code.",
+      },
+      {
+        question: "Combien de temps faut-il pour mettre en place plusieurs automatisations ?",
+        answer:
+          "Pour une PME avec des outils déjà en place (CRM, calendrier, Stripe), la mise en place de 5 automatisations prend généralement 5 jours : audit des outils existants, construction des scénarios, tests, ajustements.",
+      },
+    ],
   },
   {
     slug: "ia-pme-par-ou-commencer",
@@ -89,6 +126,23 @@ export const articles: BlogArticle[] = [
       "Si aucun de ces signaux n'est présent, ce n'est probablement pas encore le moment — et c'est une réponse honnête, pas un argument de vente.",
       "## Par où commencer concrètement",
       "La meilleure première étape n'est pas d'acheter un outil, mais de lister les tâches répétitives de la semaine et de repérer celle qui revient le plus souvent. C'est exactement ce qu'un audit gratuit permet de faire en 30 minutes : identifier la tâche la plus rentable à automatiser en premier, avant de s'engager sur quoi que ce soit.",
+    ],
+    faq: [
+      {
+        question: "Par où commencer avec l'IA pour une PME ?",
+        answer:
+          "Par lister les tâches répétitives de la semaine et repérer celle qui revient le plus souvent, plutôt que d'acheter un outil sans avoir identifié de problème précis à résoudre.",
+      },
+      {
+        question: "Combien coûte un projet IA pour une PME ?",
+        answer:
+          "Il n'y a pas de budget universel : une automatisation simple peut démarrer autour de 190€, un chatbot autour de 290-490€, un site avec IA intégrée autour de 390€, selon la complexité du besoin.",
+      },
+      {
+        question: "Comment savoir si ma PME est prête pour l'IA ?",
+        answer:
+          "Trois signaux : la même question revient plusieurs fois par semaine de la part des clients, une tâche administrative prend plus d'une heure par semaine sans réflexion particulière, ou l'entreprise perd des opportunités faute de temps pour répondre assez vite.",
+      },
     ],
   },
 ];
