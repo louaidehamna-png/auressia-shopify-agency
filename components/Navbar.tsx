@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
@@ -31,6 +32,7 @@ export function Navbar() {
         }`}
       >
         <Link href="/" className="mr-3 flex items-center gap-2 px-2">
+          <Image src="/logo.png" alt="Auressia" width={28} height={23} priority />
           <span className="font-heading text-lg font-semibold tracking-tight">
             Auressia
           </span>

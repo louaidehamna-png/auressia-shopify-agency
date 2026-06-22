@@ -42,6 +42,7 @@ export default async function BlogArticlePage({ params }: Props) {
     "@type": "Article",
     headline: article.title,
     description: article.excerpt,
+    image: `${BASE_URL}/og-image.png`,
     datePublished: article.publishedAt,
     dateModified: article.publishedAt,
     author: {
@@ -55,6 +56,10 @@ export default async function BlogArticlePage({ params }: Props) {
       "@type": "Organization",
       "@id": `${BASE_URL}/#organization`,
       name: "Auressia",
+      logo: {
+        "@type": "ImageObject",
+        url: `${BASE_URL}/logo.png`,
+      },
     },
     mainEntityOfPage: `${BASE_URL}/blog/${article.slug}`,
   };

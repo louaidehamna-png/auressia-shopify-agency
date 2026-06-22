@@ -74,6 +74,8 @@ const organizationSchema = {
   url: BASE_URL,
   email: "louaidehamna@gmail.com",
   telephone: "+33760009646",
+  logo: `${BASE_URL}/logo.png`,
+  image: `${BASE_URL}/logo.png`,
   priceRange: "€190 – €690",
   currenciesAccepted: "EUR",
   address: {
