@@ -37,6 +37,10 @@ export default async function BlogArticlePage({ params }: Props) {
   const article = getArticle(slug);
   if (!article) notFound();
 
+  const relatedArticles = articles.filter(
+    (a) => a.published && a.slug !== article.slug
+  );
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -163,6 +167,33 @@ export default async function BlogArticlePage({ params }: Props) {
                       {item.answer}
                     </p>
                   </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {relatedArticles.length > 0 && (
+            <div className="mt-16">
+              <h2 className="font-heading text-2xl font-semibold mb-6">
+                Articles liés
+              </h2>
+              <div className="grid gap-4 sm:grid-cols-2">
+                {relatedArticles.map((related) => (
+                  <Link
+                    key={related.slug}
+                    href={`/blog/${related.slug}`}
+                    className="rounded-2xl border border-border bg-card p-5 hover:border-azure transition-colors"
+                  >
+                    <span className="text-xs font-medium text-primary bg-azure-soft px-2.5 py-1 rounded-full">
+                      {related.category}
+                    </span>
+                    <h3 className="font-heading text-base font-semibold mt-3 mb-1.5">
+                      {related.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {related.excerpt}
+                    </p>
+                  </Link>
                 ))}
               </div>
             </div>

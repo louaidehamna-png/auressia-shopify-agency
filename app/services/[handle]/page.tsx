@@ -16,6 +16,8 @@ import {
   Shield,
 } from "lucide-react";
 
+const BASE_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://auressia-shopify-agency.vercel.app";
+
 type Props = { params: Promise<{ handle: string }> };
 
 export async function generateStaticParams() {
@@ -38,9 +40,36 @@ export default async function ServiceDetailPage({ params }: Props) {
   const service = getServiceByHandle(handle);
   if (!service) notFound();
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: service.name,
+    description: service.longDescription,
+    provider: {
+      "@type": "Organization",
+      "@id": `${BASE_URL}/#organization`,
+      name: "Auressia",
+    },
+    areaServed: [
+      { "@type": "City", name: "Nice" },
+      { "@type": "City", name: "Sophia Antipolis" },
+      { "@type": "City", name: "Monaco" },
+    ],
+    offers: {
+      "@type": "Offer",
+      price: service.price,
+      priceCurrency: "EUR",
+      url: `${BASE_URL}/services/${service.handle}`,
+    },
+  };
+
   return (
     <>
       <Navbar />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       <main className="pt-28 pb-24 px-4">
         <div className="mx-auto max-w-4xl">
           {/* Breadcrumb */}
