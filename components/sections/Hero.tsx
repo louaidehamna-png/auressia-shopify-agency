@@ -43,9 +43,9 @@ export function Hero() {
           variants={fadeUp}
           className="font-heading text-5xl font-semibold leading-[1.1] tracking-tight text-foreground sm:text-6xl md:text-7xl"
         >
-          L&apos;IA qui travaille
+          Un site qui vous
           <br />
-          <span className="text-azure">pour votre PME.</span>
+          <span className="text-azure">ramène des clients.</span>
         </motion.h1>
 
         <motion.p
@@ -55,9 +55,9 @@ export function Hero() {
           variants={fadeUp}
           className="mt-6 max-w-2xl mx-auto text-lg text-muted-foreground leading-relaxed sm:text-xl"
         >
-          Chatbots, automatisations no-code, sites web. Des outils IA
-          concrètement utiles, livrés en&nbsp;7&nbsp;jours, à des prix
-          accessibles aux PME du&nbsp;06.
+          Sites web, chatbots WhatsApp et automatisations pour les artisans,
+          commerces et PME de Nice et du&nbsp;06. Livrés en&nbsp;7&nbsp;jours,
+          à des prix accessibles.
         </motion.p>
 
         <motion.div
@@ -68,13 +68,13 @@ export function Hero() {
           className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:justify-center"
         >
           <Link
-            href="/services"
+            href="/services/site-one-pager-framer"
             className={cn(
               buttonVariants({ size: "lg" }),
               "rounded-full bg-primary text-primary-foreground hover:bg-primary/90 px-8 h-12 text-base"
             )}
           >
-            Découvrir les services
+            Voir l&apos;offre site web
             <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
           <Link

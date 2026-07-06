@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 import { Clock, ArrowLeft } from "lucide-react";
 import { articles, getArticle } from "@/lib/blog";
 
-const BASE_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://auressia-shopify-agency.vercel.app";
+const BASE_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://www.auressia.fr";
 
 type Props = { params: Promise<{ slug: string }> };
 

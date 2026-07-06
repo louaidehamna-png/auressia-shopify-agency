@@ -16,7 +16,7 @@ import {
   Shield,
 } from "lucide-react";
 
-const BASE_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://auressia-shopify-agency.vercel.app";
+const BASE_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://www.auressia.fr";
 
 type Props = { params: Promise<{ handle: string }> };
 
@@ -140,17 +140,19 @@ export default async function ServiceDetailPage({ params }: Props) {
                     {service.price === 0 ? (
                       <span className="text-terracotta">Gratuit</span>
                     ) : (
-                      <>{service.price}&thinsp;€</>
+                      <>
+                        {service.price}&thinsp;€
+                        {service.pricePeriod && (
+                          <span className="text-lg text-muted-foreground font-normal">
+                            {service.pricePeriod}
+                          </span>
+                        )}
+                      </>
                     )}
                   </div>
-                  {service.price > 0 && (
-                    <div className="text-sm text-muted-foreground">
-                      <span className="line-through">
-                        {service.originalPrice}&thinsp;€
-                      </span>
-                      <span className="ml-2 text-terracotta font-medium">
-                        Offre de lancement
-                      </span>
+                  {service.tag && service.price > 0 && (
+                    <div className="text-sm text-terracotta font-medium">
+                      {service.tag}
                     </div>
                   )}
                 </div>

@@ -19,8 +19,8 @@ export function Services() {
             <span className="text-terracotta">pas des promesses.</span>
           </h2>
           <p className="mt-4 max-w-xl mx-auto text-muted-foreground">
-            Tarifs de lancement. Chaque service est livré avec 30 jours de
-            support inclus — pas d&apos;abandon post-livraison.
+            Prix fixes, sans surprise. Chaque service est livré avec 30 jours
+            de support inclus — pas d&apos;abandon post-livraison.
           </p>
         </div>
 
@@ -70,14 +70,16 @@ export function Services() {
                       {service.price === 0 ? (
                         <span className="text-terracotta">Gratuit</span>
                       ) : (
-                        <>{service.price}&thinsp;€</>
+                        <>
+                          {service.price}&thinsp;€
+                          {service.pricePeriod && (
+                            <span className="text-sm text-muted-foreground font-normal">
+                              {service.pricePeriod}
+                            </span>
+                          )}
+                        </>
                       )}
                     </div>
-                    {service.price > 0 && (
-                      <div className="text-xs text-muted-foreground line-through">
-                        {service.originalPrice}&thinsp;€
-                      </div>
-                    )}
                   </div>
                   <div className="flex items-center gap-1 text-xs text-muted-foreground">
                     <Clock className="h-3 w-3" />

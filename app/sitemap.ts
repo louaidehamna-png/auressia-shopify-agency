@@ -3,7 +3,7 @@ import { articles } from "@/lib/blog";
 import { services } from "@/lib/services";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL ?? "https://auressia-shopify-agency.vercel.app";
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL ?? "https://www.auressia.fr";
   const now = new Date();
 
   const blogPosts: MetadataRoute.Sitemap = articles

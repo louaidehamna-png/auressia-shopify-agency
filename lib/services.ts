@@ -6,7 +6,7 @@ export type Service = {
   description: string;
   longDescription: string;
   price: number;
-  originalPrice: number;
+  pricePeriod?: string;
   delivery: string;
   highlights: string[];
   included: string[];
@@ -14,6 +14,33 @@ export type Service = {
 };
 
 export const services: Service[] = [
+  {
+    handle: "site-one-pager-framer",
+    shopifyHandle: "site-one-pager-framer",
+    name: "Site One-Pager Framer",
+    tagline: "Un site qui donne envie de vous contacter.",
+    description:
+      "Un site one-page moderne, rapide et optimisé SEO. Conçu pour convertir, pas juste pour cocher la case présence en ligne.",
+    longDescription:
+      "Conçu sur Framer avec une approche conversion-first : chaque section a un rôle précis. Le résultat est un site rapide (Core Web Vitals au vert), mobile-first, optimisé pour Google, et qui reflète réellement votre activité. Hébergement Framer inclus la première année.",
+    price: 390,
+    delivery: "7 jours",
+    highlights: [
+      "Design sur mesure, pas un template",
+      "SEO on-page complet",
+      "Mobile-first",
+      "Hébergement Framer inclus 1 an",
+    ],
+    included: [
+      "Design et intégration sur Framer",
+      "Copywriting des sections principales",
+      "SEO on-page (balises, meta, vitesse)",
+      "Formulaire de contact intégré",
+      "Configuration du domaine",
+      "30 jours de support",
+    ],
+    tag: "Offre de lancement",
+  },
   {
     handle: "chatbot-voiceflow-starter",
     shopifyHandle: "chatbot-starter",
@@ -24,7 +51,6 @@ export const services: Service[] = [
     longDescription:
       "Entraîné sur vos propres contenus (FAQ, offres, horaires, tarifs), ce chatbot répond instantanément à vos visiteurs sans que vous ayez à intervenir. Intégrable sur votre site web ou directement dans WhatsApp. Idéal pour décharger votre SAV sur les demandes répétitives.",
     price: 290,
-    originalPrice: 590,
     delivery: "5 jours",
     highlights: [
       "Intégration site web ou WhatsApp",
@@ -39,7 +65,6 @@ export const services: Service[] = [
       "Documentation d'utilisation",
       "30 jours de support",
     ],
-    tag: "Offre de lancement",
   },
   {
     handle: "chatbot-whatsapp-pro",
@@ -51,7 +76,6 @@ export const services: Service[] = [
     longDescription:
       "Construit sur l'API officielle WhatsApp Business, ce chatbot gère l'ensemble de vos conversations entrantes. Il peut qualifier les prospects, collecter des informations, proposer des créneaux dans votre agenda et notifier votre équipe sur les cas complexes. Zéro friction pour vos clients, zéro charge pour vous.",
     price: 490,
-    originalPrice: 990,
     delivery: "7 jours",
     highlights: [
       "WhatsApp Business API officielle",
@@ -67,7 +91,6 @@ export const services: Service[] = [
       "Tests & mise en production",
       "30 jours de support",
     ],
-    tag: "Offre de lancement",
   },
   {
     handle: "automatisation-make",
@@ -79,7 +102,6 @@ export const services: Service[] = [
     longDescription:
       "Avec Make (ex-Integromat), je conçois 5 scénarios d'automatisation sur mesure pour votre activité. Connexion entre vos outils existants (CRM, Google Sheets, email, Notion, Slack, etc.), déclencheurs personnalisés, gestion d'erreurs. Vous récupérez des heures de travail chaque semaine.",
     price: 190,
-    originalPrice: 390,
     delivery: "5 jours",
     highlights: [
       "5 scénarios Make sur mesure",
@@ -96,33 +118,6 @@ export const services: Service[] = [
     ],
   },
   {
-    handle: "site-one-pager-framer",
-    shopifyHandle: "site-one-pager-framer",
-    name: "Site One-Pager Framer",
-    tagline: "Un site qui donne envie de vous contacter.",
-    description:
-      "Un site one-page moderne, rapide et optimisé SEO. Conçu pour convertir, pas juste pour cocher la case présence en ligne.",
-    longDescription:
-      "Conçu sur Framer avec une approche conversion-first : chaque section a un rôle précis. Le résultat est un site rapide (Core Web Vitals au vert), mobile-first, optimisé pour Google, et qui reflète réellement votre activité. Hébergement Framer inclus la première année.",
-    price: 390,
-    originalPrice: 790,
-    delivery: "7 jours",
-    highlights: [
-      "Design sur mesure, pas un template",
-      "SEO on-page complet",
-      "Mobile-first",
-      "Hébergement Framer inclus 1 an",
-    ],
-    included: [
-      "Design et intégration sur Framer",
-      "Copywriting des sections principales",
-      "SEO on-page (balises, meta, vitesse)",
-      "Formulaire de contact intégré",
-      "Configuration du domaine",
-      "30 jours de support",
-    ],
-  },
-  {
     handle: "pack-activite-complete",
     shopifyHandle: "pack-activite-complete",
     name: "Pack Activité Complète",
@@ -132,7 +127,6 @@ export const services: Service[] = [
     longDescription:
       "Ce pack combine un chatbot WhatsApp Pro et un système d'automatisation complet : confirmations de rendez-vous, rappels automatiques, suivi post-service. Moins de no-shows, moins de temps au téléphone, plus de chiffre d'affaires. Conçu pour les activités à forte composante relationnelle.",
     price: 690,
-    originalPrice: 1490,
     delivery: "10 jours",
     highlights: [
       "Chatbot WhatsApp complet",
@@ -148,7 +142,33 @@ export const services: Service[] = [
       "Formation à l'outil (1h)",
       "30 jours de support",
     ],
-    tag: "Offre de lancement",
+  },
+  {
+    handle: "maintenance-mensuelle",
+    shopifyHandle: "maintenance-mensuelle",
+    name: "Maintenance & Évolution",
+    tagline: "Votre site et vos outils restent à jour, sans y penser.",
+    description:
+      "Votre site, chatbot ou automatisation vit avec votre activité : horaires qui changent, nouvelles offres, ajustements. Je m'en occupe chaque mois, vous n'y pensez plus.",
+    longDescription:
+      "Après la livraison, votre outil doit rester à jour pour rester utile. Cet abonnement couvre les mises à jour de contenu (tarifs, horaires, offres), la surveillance de votre chatbot et de vos scénarios, les petites évolutions, et un support prioritaire. Sans engagement — vous arrêtez quand vous voulez.",
+    price: 59,
+    pricePeriod: "/mois",
+    delivery: "En continu",
+    highlights: [
+      "Mises à jour de contenu illimitées (raisonnables)",
+      "Surveillance chatbot & automatisations",
+      "Support prioritaire",
+      "Sans engagement",
+    ],
+    included: [
+      "Mises à jour contenus (horaires, tarifs, offres)",
+      "Maintenance chatbot & scénarios Make",
+      "Surveillance et corrections",
+      "1 petite évolution par mois",
+      "Support prioritaire (réponse sous 24h)",
+      "Résiliable à tout moment",
+    ],
   },
   {
     handle: "audit-ia",
@@ -160,7 +180,6 @@ export const services: Service[] = [
     longDescription:
       "En 30 minutes d'échange, j'analyse vos processus actuels et identifie les opportunités IA les plus pertinentes pour votre contexte. Vous repartez avec un rapport personnalisé et une feuille de route concrète — que vous décidiez de travailler avec moi ou non.",
     price: 0,
-    originalPrice: 90,
     delivery: "Sous 48h",
     highlights: [
       "Appel visio 30 minutes",

@@ -1,17 +1,22 @@
 # Auressia
 
-> Services digitaux IA pour les PME de la Côte d'Azur. Chatbots IA, automatisations no-code, et sites web livrés en 7 jours à des prix accessibles.
+> Sites web, chatbots WhatsApp et automatisations no-code pour les PME de la Côte d'Azur. Livrés en 7 jours à des prix accessibles.
 
-Auressia est une agence de services digitaux basée à Nice (France), spécialisée dans les outils IA et l'automatisation no-code pour les petites et moyennes entreprises. Fondée par Louai Dehamna, elle intervient sur Nice, Sophia Antipolis, Monaco et l'ensemble de la Côte d'Azur.
+Auressia est une agence de services digitaux basée à Nice (France), spécialisée dans les sites web, les chatbots IA et l'automatisation no-code pour les petites et moyennes entreprises. Fondée par Louai Dehamna, elle intervient sur Nice, Sophia Antipolis, Monaco et l'ensemble de la Côte d'Azur.
 
 ## Services
 
-- [Chatbot Starter](https://www.auressia.fr/services/chatbot-voiceflow-starter): Chatbot IA pour site web, formé sur les FAQ de l'entreprise. Prix de lancement : 290€. Livraison : 5 jours.
-- [Chatbot WhatsApp Pro](https://www.auressia.fr/services/chatbot-whatsapp-pro): Chatbot intégré à WhatsApp Business via API officielle, prise de RDV et qualification de leads. Prix de lancement : 490€. Livraison : 7 jours.
-- [Automatisation Make](https://www.auressia.fr/services/automatisation-make): 5 scénarios Make.com personnalisés pour automatiser facturation, CRM, emails ou réservations. Prix de lancement : 190€. Livraison : 5 jours.
-- [Site One-Pager Framer](https://www.auressia.fr/services): Site vitrine one-page sur Framer, mobile-first, SEO optimisé, hébergement inclus 1 an. Prix de lancement : 390€. Livraison : 7 jours.
-- [Pack Activité Complète](https://www.auressia.fr/services): Chatbot WhatsApp + automatisation + site one-pager. Solution complète pour démarrer la transformation digitale. Prix de lancement : 690€. Livraison : 10 jours.
-- [Audit IA & Automatisation](https://www.auressia.fr/services): Appel de 30 minutes + rapport personnalisé + roadmap IA. Entièrement gratuit, disponible sous 48h.
+- [Site One-Pager Framer](https://www.auressia.fr/services/site-one-pager-framer): Site vitrine one-page sur Framer, mobile-first, SEO optimisé, hébergement inclus 1 an. Prix : 390€. Livraison : 7 jours.
+- [Chatbot Starter](https://www.auressia.fr/services/chatbot-voiceflow-starter): Chatbot IA pour site web, formé sur les FAQ de l'entreprise. Prix : 290€. Livraison : 5 jours.
+- [Chatbot WhatsApp Pro](https://www.auressia.fr/services/chatbot-whatsapp-pro): Chatbot intégré à WhatsApp Business via API officielle, prise de RDV et qualification de leads. Prix : 490€. Livraison : 7 jours.
+- [Automatisation Make](https://www.auressia.fr/services/automatisation-make): 5 scénarios Make.com personnalisés pour automatiser facturation, CRM, emails ou réservations. Prix : 190€. Livraison : 5 jours.
+- [Pack Activité Complète](https://www.auressia.fr/services/pack-activite-complete): Chatbot WhatsApp + automatisation des réservations et relances. Prix : 690€. Livraison : 10 jours.
+- [Maintenance & Évolution](https://www.auressia.fr/services/maintenance-mensuelle): Abonnement mensuel — mises à jour de contenu, surveillance chatbot/automatisations, support prioritaire. Prix : 59€/mois, sans engagement.
+- [Audit IA & Automatisation](https://www.auressia.fr/services/audit-ia): Appel de 30 minutes + rapport personnalisé + roadmap IA. Entièrement gratuit, disponible sous 48h.
+
+## Réalisations
+
+- ME Propreté (entreprise de nettoyage, Nice) : site vitrine conçu et livré en 7 jours — https://louaidehamna-png.github.io/bilel-web-site/
 
 ## Processus
 

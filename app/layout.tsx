@@ -21,16 +21,16 @@ const fraunces = Fraunces({
   axes: ["opsz", "SOFT", "WONK"],
 });
 
-const BASE_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://auressia-shopify-agency.vercel.app";
+const BASE_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://www.auressia.fr";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Auressia — Services digitaux IA pour les PME de la Côte d'Azur",
+    default: "Auressia — Sites web & IA pour les PME de la Côte d'Azur",
     template: "%s | Auressia",
   },
   description:
-    "Chatbots IA, automatisations no-code, sites web. Services digitaux à prix PME pour les entrepreneurs de Nice, Sophia Antipolis et la Côte d'Azur. Livraison en 7 jours.",
+    "Sites web, chatbots WhatsApp et automatisations no-code à prix PME pour les entrepreneurs de Nice, Sophia Antipolis et la Côte d'Azur. Livraison en 7 jours.",
   keywords: [
     "agence chatbot Nice",
     "automatisation PME Sophia Antipolis",
@@ -70,7 +70,7 @@ const organizationSchema = {
   name: "Auressia",
   alternateName: "Auressia — Services digitaux IA",
   description:
-    "Services digitaux IA pour les PME de la Côte d'Azur. Chatbots, automatisations Make, sites Framer — livrés en 7 jours.",
+    "Sites web, chatbots et automatisations pour les PME de la Côte d'Azur. Sites Framer, chatbots WhatsApp, scénarios Make — livrés en 7 jours.",
   url: BASE_URL,
   email: "louaidehamna@gmail.com",
   telephone: "+33760009646",
@@ -126,8 +126,13 @@ const organizationSchema = {
       },
       {
         "@type": "Offer",
-        itemOffered: { "@type": "Service", name: "Pack Activité Complète", description: "Chatbot + automatisation + site one-pager, livré en 10 jours." },
+        itemOffered: { "@type": "Service", name: "Pack Activité Complète", description: "Chatbot WhatsApp + automatisation des réservations et relances, livré en 10 jours." },
         price: "690", priceCurrency: "EUR",
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Maintenance & Évolution", description: "Abonnement mensuel : mises à jour, surveillance et support prioritaire. Sans engagement." },
+        price: "59", priceCurrency: "EUR",
       },
       {
         "@type": "Offer",

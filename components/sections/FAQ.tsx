@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Que se passe-t-il après les 30 jours de support ?",
     answer:
-      "Vous pouvez continuer en totale autonomie — tout est documenté. Si vous souhaitez un accompagnement continu, je propose des forfaits de maintenance. On en parle sans engagement lors de l'audit gratuit.",
+      "Vous pouvez continuer en totale autonomie — tout est documenté. Si vous souhaitez un accompagnement continu, l'abonnement Maintenance & Évolution (59€/mois, sans engagement) couvre les mises à jour, la surveillance et le support prioritaire.",
   },
   {
     question: "Pourquoi les prix sont-ils inférieurs aux agences habituelles ?",

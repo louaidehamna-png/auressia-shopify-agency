@@ -2,17 +2,18 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/sections/Hero";
 import { Services } from "@/components/sections/Services";
+import { CaseStudy } from "@/components/sections/CaseStudy";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { FAQ } from "@/components/sections/FAQ";
 import { CTABanner } from "@/components/sections/CTABanner";
 import { Footer } from "@/components/Footer";
 
-const BASE_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://auressia-shopify-agency.vercel.app";
+const BASE_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://www.auressia.fr";
 
 export const metadata: Metadata = {
-  title: "Auressia — Services digitaux IA pour les PME de la Côte d'Azur",
+  title: "Auressia — Sites web & IA pour les PME de la Côte d'Azur",
   description:
-    "Chatbots IA, automatisations no-code, sites web. Livrés en 7 jours à des prix PME. Nice, Sophia Antipolis, Côte d'Azur.",
+    "Sites web, chatbots WhatsApp, automatisations no-code. Livrés en 7 jours à des prix PME. Nice, Sophia Antipolis, Côte d'Azur.",
   alternates: {
     canonical: BASE_URL,
   },
@@ -43,7 +44,7 @@ const faqSchema = {
       name: "Que se passe-t-il après les 30 jours de support ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Vous pouvez continuer en totale autonomie — tout est documenté. Si vous souhaitez un accompagnement continu, je propose des forfaits de maintenance. On en parle sans engagement lors de l'audit gratuit.",
+        text: "Vous pouvez continuer en totale autonomie — tout est documenté. Si vous souhaitez un accompagnement continu, l'abonnement Maintenance & Évolution (59€/mois, sans engagement) couvre les mises à jour, la surveillance et le support prioritaire.",
       },
     },
     {
@@ -83,6 +84,7 @@ export default function HomePage() {
       <Navbar />
       <main>
         <Hero />
+        <CaseStudy />
         <Services />
         <HowItWorks />
         <FAQ />
